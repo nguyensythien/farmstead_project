@@ -25,40 +25,76 @@
 <body>
 
     <!-- --------------CODE HERE------------- -->
+
     <!-- HEADER -->
-    <header class="farm__navigation">
-        <nav
-            class="container m-auto navbar navbar-expand-sm bg-dark navbar-dark fixed-top d-flex justify-content-between">
-            <div class="navigation__left">
-                <a class="navbar-brand" href="http://127.0.0.1:5500/thiennguyen/farmstead/index/index.html">Farmstead
+    <header>
+        <nav class="farmStead__header nav container">
+            <div class="farmStead__logo">
+                <a href="#">
+                    <h1>Farmstead</h1>
+                    <i class="fa fa-leaf"></i>
                 </a>
             </div>
-            <div class="navigation__right d-flex justify-content-between">
-                <div class="navigation__leftitem navigation__form">
-                    <form action="http://127.0.0.1:5500/thiennguyen/farmstead/index/index.html">
-                        <input type="search" placeholder="search">
-                    </form>
+            <div class="farmStead__menu">
+                <div class="farmStead__search">
+                    <input placeholder="Tap here to search . . . ." type="text">
                 </div>
-                <div class="navigation__leftitem navigation__mode">
-                    <i class="fa fa-sun"></i>
+                <div class="farmStead__daynight">
+                    <a href="#"><i class="fa fa-sun"></i></a>
                 </div>
-                <div class="navigation__leftitem btn-group">
-                    <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        Action
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Separated link</a>
-                    </div>
+                <div class="farmStead__dropdown">
+                    <a href="#"><i class="fa fa-bars"></i></a>
+                    <ul>
+                        <li><a class="action" href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">SERVICES</a></li>
+                        <li><a href="#">BLOG POSTS</a></li>
+                        <li><a href="#">LANDING PAGE</a></li>
+                        <li><a href="#">ELEMENT PAGE</a></li>
+                        <li><a href="#">404 PAGE</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
     <!-- WELLCOME -->
+    <section class="farmStead__welcome container-fluid">
+        <div class="farmStead__details">
+            <h1>
+                Welcome to Farmstead
+                where Natural Food is born!
+            </h1>
+            <h5>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+            </h5>
+            <button>LEARN MORE</button>
+        </div>
+        <div class="farmStead__carousel">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/b1.jpg" alt="Los Angeles">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/b4.jpg" alt="Chicago">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/b8.jpg" alt="New York">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- GROW NATURALLY -->
     <!-- OUR PRODUCT -->
     <!-- QUALITY -->

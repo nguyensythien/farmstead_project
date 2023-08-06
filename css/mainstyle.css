@@ -3,25 +3,163 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
+a {
+    text-decoration: none;
+    color: black;
+}
+button{
+    padding: 15px 30px;
+    color: aliceblue;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    background-color: #fb811e;
+}
+button:hover{
+    background-color: #009f4d;
 }
 
 /* HEADER */
-.navigation__leftitem {
-    margin: .5rem 0 .5rem .5rem;
+.farmStead__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+.farmStead__logo h1{
+    padding-top: 5px;
+    color: #fb811e;
+}
+.farmStead__logo i{
+    position: absolute;
+    top: 0;
+    left: 85px;
+    font-size: 1.2rem;
+}
+.farmStead__logo h1, i{
+    color: #fb811e;
+    transition: all .5s;
+}
+.farmStead__logo:hover h1,i{
+    color: black;
+}
+.farmStead__logo a{
+    text-decoration: none;
 }
 
-.navigation__leftitem form {
-    background: #fff;
-    border: solid 1px #eee;
-    padding: 0 10px;
+.farmStead__menu{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.farmStead__search input{
     width: 35px;
     height: 35px;
-    border-radius: 10rem;
+    border-radius: 35px;
+    border: none;
     transition: all .5s;
+    background-image: url(../img/search__button.png);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 8px center;
     cursor: pointer;
+}
+.farmStead__search input::placeholder{
+    padding-left: 40px;
+    color: black;
+    font-weight: 500;
+}
+.farmStead__search input:focus{
+    width: 200px;
+}
+.farmStead__daynight{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 35px;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 20px;
+}
+.farmStead__daynight i{
+    transition: all .2s;
+}
+.farmStead__daynight a:hover i{
+    color: #fb811e;
+}
+.farmStead__dropdown{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 35px;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 20px;
+    transition: all .5s;
+}
+
+.farmStead__dropdown ul{
+    background-color: #fb811e;
+    width: 200px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    border-radius: 10px;
+    height: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+.farmStead__dropdown:hover ul{
+    height: 320px;
+}
+.farmStead__dropdown ul li{
+    line-height: 30px;
+    padding-bottom: 10px;
+}
+.farmStead__dropdown ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 0px;
+}
+
+/* WELCOME */
+.farmStead__welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.farmStead__carousel{
+    width: 60%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 30px;
+}
+.farmStead__details{
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    left: 12%;
+    z-index: 99;
+}
+.farmStead__details h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.farmStead__details h5{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(89, 89, 89);
+    margin-bottom: 20px;
+}
+.farmStead__details button{
+    margin-top: 50px;
 }
