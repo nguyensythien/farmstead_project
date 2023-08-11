@@ -187,11 +187,75 @@ i {
     margin-top: 50px;
 }
 
-/* TECHNOLOGY */
-
-.technology {
-    margin-top: 1000px;
+.farmStead__welcome {
+    margin-bottom: 1000px;
 }
+
+/* CHOOSE */
+.home_choose>.container>.row {
+    align-items: center;
+}
+
+.home_choose .choose__left .left__list {
+    margin-top: 72px;
+}
+
+.home_choose .choose__left .left__list i {
+    color: #fb811e;
+    font-size: 30px;
+}
+
+.home_choose .choose__left .left__list h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: var(--font-volkhov);
+}
+
+.home_choose .choose__left .left__list p {
+    color: #707070;
+    line-height: 26px;
+    font-size: 17px;
+}
+
+.home_choose .choose__right {
+    padding-left: 110px;
+}
+
+.home_choose .choose__right img {
+    border-radius: 30px;
+    height: 587.5px;
+    object-fit: cover;
+}
+
+.home_choose .choose__right .image__tag {
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    color: white;
+    background-color: #fb811e;
+    border-radius: 0 0 100px 0;
+    padding: 40px 60px;
+    text-align: center;
+    box-shadow: 30px 30px 30px rgb(0 0 0 / 20%);
+}
+
+.home_choose .choose__right .image__tag span {
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: 600;
+    font-family: var(--font-volkhov);
+}
+
+.home_choose .choose__right .image__tag p {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    margin-bottom: 0;
+}
+
+
+/* TECHNOLOGY */
 
 .technology .container .technology-item {
     border-radius: 10px;
@@ -543,8 +607,24 @@ footer .footer__column .footer__social a i:hover {
 
 
 /* ! Responsive */
+@media screen and (max-width: 991.98px) {
+    /* todo: choose */
+    .home_choose .choose__right img {
+        height: auto;
+    }
+}
+
 /* ! 768px */
 @media screen and (max-width: 767.98px) {
+    /* todo: choose */
+    .home_choose .choose__right {
+        padding-left: 12px;
+    }
+
+    .home_choose .choose__right .image__tag {
+        left: -50px;
+    }
+
     /* todo: carousel */
     .home_carousel .carousel-inner .carousel__content i,
     .home_carousel .carousel-inner .carousel__content blockquote p {
