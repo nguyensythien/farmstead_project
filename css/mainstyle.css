@@ -1093,12 +1093,14 @@ footer .footer__column .footer__social a i:hover {
 }
 
 
+/* dark theme technology */
+.dark .add__dark__theme{
+    color: white;
+}
+
 .carousel-indicators button{
     padding: 0;
     margin: 0;
     width: 0;
     height: 0;
-}
-.dark .teachnology__item__dark__add{
-    color: white;
 }
