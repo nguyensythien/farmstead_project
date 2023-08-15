@@ -1069,4 +1069,36 @@ footer .footer__column .footer__social a i:hover {
 
 
 
+/* BACK TO TOP */
+.top {
+    --offset: 50px; 
+    position: sticky;
+    bottom: 20px;
+    margin-right:10px; 
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    
+    /* visual styling */
+    cursor: pointer;
+    background-color: #009f4d;
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-left: 90%;
+  }
+  .top i{
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 25px;
+  }
+  @media screen and (max-width: 764px){
+    .top{
+        margin-left: 70%;
+    }
+  }
 /* finallll */
